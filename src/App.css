@@ -38,6 +38,7 @@
   padding: 12px;  
   font-size: 15px;
   color: white;
+  cursor: pointer;
    }
 .addtask:hover{
   background: #464242;
