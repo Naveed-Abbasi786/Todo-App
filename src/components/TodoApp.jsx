@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { IoIosAdd } from "react-icons/io";
 import { MdDelete } from 'react-icons/md';
 import { FaRegEdit } from 'react-icons/fa';
 import { PiPaperPlaneRight } from "react-icons/pi";
@@ -7,7 +6,7 @@ import '../App.css';
 
 export default function TodoApp() {
   const [inputData, setInputData] = useState('');
-  const [items, setItems] = useState(["wkjnk"]);
+  const [items, setItems] = useState(["My frist Task"]);
   const [editableIndex, setEditableIndex] = useState(null);
 
   const addTask = () => {
@@ -47,7 +46,7 @@ export default function TodoApp() {
           onChange={(e) => setInputData(e.target.value)}
           placeholder="Add a new todo"
         />
-        <button className='addtask'>
+        <button className='addtask' onClick={addTask}>
            Add
         </button>
         <div id="todoList">
